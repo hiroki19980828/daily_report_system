@@ -9,13 +9,8 @@ import java.util.Properties;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
-import javax.servlet.annotation.WebListener;
 
-/**
- * Application Lifecycle Listener implementation class PropertiesListener
- *
- */
-@WebListener
+//*@WebListener
 public class PropertiesListener implements ServletContextListener {
 
     public PropertiesListener() {

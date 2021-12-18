@@ -3,21 +3,21 @@
 
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-        <title><c:out value="日報管理システム"/></title>
- <link rel="stylesheet" href="<c:url value='/css/reset.css' />">
+<head>
+<meta charset="UTF-8">
+    <title><c:out value="日報管理システム" /></title>
+    <link rel="stylesheet" href="<c:url value='/css/reset.css' />">
     <link rel="stylesheet" href="<c:url value='/css/style.css' />">
-        </head>
-    <body>
-        <div id="wrapper">
-            <div id="header">
-                <div id="header_menu">
-                    <h1>日報管理システム</h1>
-                </div>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div id="header_menu">
+                <h1>日報管理システム</h1>
             </div>
-            <div id="content">${param.content}</div>
-            <div id="footer">by Taro Kirameki.</div>
-         </div>
-    </body>
+        </div>
+        <div id="content">${param.content}</div>
+        <div id="footer">by Taro Kirameki.</div>
+    </div>
+</body>
 </html>
