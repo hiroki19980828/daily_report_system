@@ -22,6 +22,7 @@ public enum ForwardConst {
     CMD_LOGIN("login"),
     CMD_LOGOUT("logout"),
     CMD_NEW("entryNew"),
+    CMD_CALENDAR("calender"),
     CMD_CREATE("create"),
     CMD_EDIT("edit"),
     CMD_UPDATE("update"),
@@ -38,7 +39,8 @@ public enum ForwardConst {
     FW_REP_INDEX("reports/index"),
     FW_REP_SHOW("reports/show"),
     FW_REP_NEW("reports/new"),
-    FW_REP_EDIT("reports/edit");
+    FW_REP_EDIT("reports/edit"),
+    FW_REP_CALENDAR("reports/calendar");
 
     /**
      * 文字列

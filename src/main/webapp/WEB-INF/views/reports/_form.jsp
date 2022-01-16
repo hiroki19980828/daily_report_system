@@ -36,7 +36,13 @@
 <br />
 <br />
 
-<label for="${AttributeConst.REP_CONTENT.getValue()}">内容</label>
+<label for="${AttributeConst.REP_SCHEDULE.getValue()}">計画内容</label>
+<br />
+<textarea name="${AttributeConst.REP_SCHEDULE.getValue()}" rows="10"
+    cols="50">${report.schedule}</textarea>
+<br />
+
+<label for="${AttributeConst.REP_CONTENT.getValue()}">実績内容</label>
 <br />
 <textarea name="${AttributeConst.REP_CONTENT.getValue()}" rows="10"
     cols="50">${report.content}</textarea>

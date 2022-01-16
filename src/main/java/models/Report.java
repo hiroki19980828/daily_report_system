@@ -76,6 +76,13 @@ public class Report {
     private String title;
 
     /**
+     * スケジュールの内容
+     */
+    @Lob
+    @Column(name = JpaConst.REP_COL_SCHEDULE, nullable = false)
+    private String schedule;
+    
+    /**
      * 日報の内容
      */
     @Lob
