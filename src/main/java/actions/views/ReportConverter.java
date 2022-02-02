@@ -21,8 +21,10 @@ public class ReportConverter {
                 rv.getId(),
                 EmployeeConverter.toModel(rv.getEmployee()),
                 rv.getReportDate(),
+                rv.getStartTime(),
+                rv.getEndTime(),
                 rv.getTitle(),
-                rv.getSchedule(), 
+                rv.getSchedule(),
                 rv.getContent(),
                 rv.getCreatedAt(),
                 rv.getUpdatedAt());
@@ -43,6 +45,8 @@ public class ReportConverter {
                 r.getId(),
                 EmployeeConverter.toView(r.getEmployee()),
                 r.getReportDate(),
+                r.getStarttime(),
+                r.getEndtime(),
                 r.getTitle(),
                 r.getSchedule(),
                 r.getContent(),
@@ -74,6 +78,8 @@ public class ReportConverter {
         r.setId(rv.getId());
         r.setEmployee(EmployeeConverter.toModel(rv.getEmployee()));
         r.setReportDate(rv.getReportDate());
+        r.setStarttime(rv.getStartTime());
+        r.setEndtime(rv.getEndTime());
         r.setTitle(rv.getTitle());
         r.setSchedule(rv.getSchedule());
         r.setContent(rv.getContent());

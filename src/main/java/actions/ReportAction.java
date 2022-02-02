@@ -111,11 +111,14 @@ public class ReportAction extends ActionBase {
                     null,
                     ev, //ログインしている従業員を、日報作成者として登録する
                     day,
-                    getRequestParam(AttributeConst.REP_TITLE),
-                    getRequestParam(AttributeConst.REP_SCHEDULE),
-                    getRequestParam(AttributeConst.REP_CONTENT),
 
-                    null, null);
+                    getRequestParam(AttributeConst.REP_TITLE),
+                    getRequestParam(AttributeConst.REP_CONTENT),
+                    getRequestParam(AttributeConst.REP_SCHEDULE),
+                    getRequestParam(AttributeConst.REP_STARTTIME),
+                    getRequestParam(AttributeConst.REP_ENDTIME),
+
+                    null,null);
 
             //日報情報登録
             List<String> errors = service.create(rv);
@@ -210,8 +213,12 @@ public class ReportAction extends ActionBase {
             //入力された日報内容を設定する
             rv.setReportDate(toLocalDate(getRequestParam(AttributeConst.REP_DATE)));
             rv.setTitle(getRequestParam(AttributeConst.REP_TITLE));
-            rv.setSchedule(getRequestParam(AttributeConst.REP_SCHEDULE));
             rv.setContent(getRequestParam(AttributeConst.REP_CONTENT));
+            rv.setSchedule(getRequestParam(AttributeConst.REP_SCHEDULE));
+            rv.setStartTime(getRequestParam(AttributeConst.REP_STARTTIME));
+            rv.setEndTime(getRequestParam(AttributeConst.REP_ENDTIME));
+
+
 
             //日報データを更新する
             List<String> errors = service.update(rv);
@@ -237,12 +244,9 @@ public class ReportAction extends ActionBase {
             }
         }
     }
-        public void calender() throws ServletException, IOException {
-              //カレンダー画面を表示
-                forward(ForwardConst.FW_REP_CALENDAR);
 
 
-            }
+
 
 
 }

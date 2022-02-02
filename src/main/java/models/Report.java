@@ -64,10 +64,14 @@ public class Report {
     private Employee employee;
 
     /**
-     * いつの日報かを示す日付
+     * いつの日報かを示す日付 開始時間、終了時間
      */
     @Column(name = JpaConst.REP_COL_REP_DATE, nullable = false)
     private LocalDate reportDate;
+    @Column(name = JpaConst.REP_COL_REP_STARTTIME, nullable = false)
+    private String starttime;
+    @Column(name = JpaConst.REP_COL_REP_ENDTIME, nullable = false)
+    private String endtime;
 
     /**
      * 日報のタイトル
@@ -81,7 +85,7 @@ public class Report {
     @Lob
     @Column(name = JpaConst.REP_COL_SCHEDULE, nullable = false)
     private String schedule;
-    
+
     /**
      * 日報の内容
      */
@@ -100,5 +104,10 @@ public class Report {
      */
     @Column(name = JpaConst.REP_COL_UPDATED_AT, nullable = false)
     private LocalDateTime updatedAt;
+
+
+
+
+
 
 }

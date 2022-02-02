@@ -23,6 +23,20 @@
 <br />
 <br />
 
+<label for="${AttributeConst.REP_STARTTIME.getValue()}">開始時間</label>
+
+<input type="time" name="${AttributeConst.REP_STARTTIME.getValue()}"
+    value="<fmt:formatDate value='${startTime}' pattern='hh-mm-ss' />" />
+
+<h1>〜</h1>
+
+<label for="${AttributeConst.REP_ENDTIME.getValue()}">終了時間</label>
+
+<input type="time" name="${AttributeConst.REP_ENDTIME.getValue()}"
+    value="<fmt:formatDate value='${endTime}' pattern='hh-mm-ss' />" />
+<br />
+<br />
+
 <label for="name">氏名</label>
 <br />
 <c:out value="${sessionScope.login_employee.name}" />
@@ -31,8 +45,7 @@
 
 <label for="${AttributeConst.REP_TITLE.getValue()}">タイトル</label>
 <br />
-<input type="text" name="${AttributeConst.REP_TITLE.getValue()}"
-    value="${report.title}" />
+<input type="text" name="${AttributeConst.REP_TITLE.getValue()}"value="${report.title}" />
 <br />
 <br />
 

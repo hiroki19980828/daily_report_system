@@ -18,6 +18,28 @@
     <title><c:out value="日報管理システム" /></title>
     <link rel="stylesheet" href="<c:url value='/css/reset.css' />">
     <link rel="stylesheet" href="<c:url value='/css/style.css' />">
+    <!--  link rel="stylesheet" href="<c:url value='/css/carendar.css' />"-->
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            height: 100vh;
+            width: 100%;
+        }
+        @media screen and (max-width:768px) {
+          body {
+            font-size: 62.5%;
+          }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/locales/ja.js"></script>
+
+
 </head>
 <body>
     <div id="wrapper">

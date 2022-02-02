@@ -33,6 +33,19 @@ public class ReportService extends ServiceBase {
     }
 
     /**
+     * 指定した従業員が作成した日報データを、取得しReportViewのリストで返却する
+     * @param employee 従業員
+     * @return 一覧画面に表示するデータのリスト
+     */
+    public List<ReportView> getMinePerPage(EmployeeView employee) {
+
+        List<Report> reports = em.createNamedQuery(JpaConst.Q_REP_GET_ALL_MINE, Report.class)
+                .setParameter(JpaConst.JPQL_PARM_EMPLOYEE, EmployeeConverter.toModel(employee))
+                .getResultList();
+        return ReportConverter.toViewList(reports);
+    }
+
+    /**
      * 指定した従業員が作成した日報データの件数を取得し、返却する
      * @param employee
      * @return 日報データの件数

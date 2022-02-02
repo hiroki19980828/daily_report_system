@@ -32,6 +32,8 @@ public class ReportView {
      * いつの日報かを示す日付
      */
     private LocalDate reportDate;
+    private String startTime;
+    private String endTime;
 
     /**
      * 日報のタイトル

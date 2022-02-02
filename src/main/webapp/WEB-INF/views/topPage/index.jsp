@@ -6,6 +6,7 @@
 <c:set var="actTop" value="${ForwardConst.ACT_TOP.getValue()}" />
 <c:set var="actEmp" value="${ForwardConst.ACT_EMP.getValue()}" />
 <c:set var="actRep" value="${ForwardConst.ACT_REP.getValue()}" />
+<c:set var="actCal" value="${ForwardConst.ACT_CAL.getValue()}" />
 
 <c:set var="commShow" value="${ForwardConst.CMD_SHOW.getValue()}" />
 <c:set var="commIdx" value="${ForwardConst.CMD_INDEX.getValue()}" />
@@ -55,6 +56,6 @@
             </c:forEach>
         </div>
         <p><a href="<c:url value='?action=${actRep}&command=${commNew}' />">新規日報の登録</a></p>
-        <p><a href="<c:url value='?action=${actRep}&command=${commCal}' />">スケジュールの確認</a></p>
+        <p><a href="<c:url value='?action=${actCal}&command=${commCal}' />">スケジュールの確認</a></p>
     </c:param>
 </c:import>

@@ -47,9 +47,14 @@ public enum AttributeConst {
     REP_COUNT("reports_count"),
     REP_ID("id"),
     REP_DATE("report_date"),
+    REP_CONTENT("content"),
     REP_TITLE("title"),
     REP_SCHEDULE("schedule"), //計画の内容
-    REP_CONTENT("content");
+    REP_STARTTIME("starttime"), //開始時間
+    REP_ENDTIME("endtime"); //終了時間
+
+
+
 
     private final String text;
     private final Integer i;

@@ -12,6 +12,7 @@ public enum ForwardConst {
     ACT_EMP("Employee"),
     ACT_REP("Report"),
     ACT_AUTH("Auth"),
+    ACT_CAL("Calendar"),
 
     //command
     CMD("command"),
@@ -22,7 +23,7 @@ public enum ForwardConst {
     CMD_LOGIN("login"),
     CMD_LOGOUT("logout"),
     CMD_NEW("entryNew"),
-    CMD_CALENDAR("calender"),
+    CMD_CALENDAR("calendar"),
     CMD_CREATE("create"),
     CMD_EDIT("edit"),
     CMD_UPDATE("update"),
