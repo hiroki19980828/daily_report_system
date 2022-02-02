@@ -39,7 +39,6 @@
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/locales/ja.js"></script>
 
-
 </head>
 <body>
     <div id="wrapper">
