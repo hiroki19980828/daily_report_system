@@ -35,9 +35,9 @@
                     <c:forEach var="report" items="${reports}" varStatus="status">
                      {
                          <fmt:parseDate value="${report.reportDate}" pattern="yyyy-MM-dd" var="createDay" type="date" />
+                         title : '<c:out value="${report.title}"  />',
                          start :'<fmt:formatDate value="${createDay}" pattern="yyyy-MM-dd" />T<c:out value="${report.startTime}"  />:00',
                          end :' <fmt:formatDate value="${createDay}" pattern="yyyy-MM-dd" />T<c:out value="${report.endTime}" />:00',
-                         display: 'background',
                          color: '#ff9f89'
                      } ,
                 </c:forEach>
